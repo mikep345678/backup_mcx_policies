@@ -1,9 +1,9 @@
 #!/bin/bash
 
 oddomain="/LDAPv3/od1-sdob.ad.barabooschools.net"
-outfolder="~/Desktop/mcx_backup"
-mkdir -p $outfolder"/computergroups"
-mkdir -p $outfolder"/usergroups"
+outfolder=~/Desktop/mcx_backup
+mkdir -p $outfolder"/computergroups/"
+mkdir -p $outfolder"/usergroups/"
 
 computers=`dscl $oddomain -list ComputerGroups`
 
